@@ -1,0 +1,94 @@
+{
+    "name": "pinegrow-vscode",
+    "displayName": "Pinegrow Visual studio code",
+    "description": "Visual studio code plugin for Pinegrow integration https://pinegrow.com",
+    "version": "0.0.1",
+    "publisher": "Pinegrow",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./extension",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Pinegrow/PinegrowVSCode.git"
+    },
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Pinegrow",
+            "properties": {
+                "pinegrow.urlWithPort": {
+                    "type": "string",
+                    "default": "http://localhost:40000",
+                    "description": "Url with hostname and port of Pinegrow's internal webserver. Note that port + 1 will be used for code editor communication. Default value is http://localhost:40000. In Pinegrow, use `Support -> Show API url` to display the url."
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "extension.selectInPG",
+                "title": "Pinegrow: Show element"
+            },
+            {
+                "command": "extension.openInPG",
+                "title": "Pinegrow: Open file"
+            },
+            {
+                "command": "extension.reconnect",
+                "title": "Pinegrow: Reconnect"
+            },
+            {
+                "command": "extension.detectMapping",
+                "title": "Pinegrow: Detect PG <-> VS Code file path mapping"
+            },
+            {
+                "command": "extension.downloadPinegrow",
+                "title": "Pinegrow: Download"
+            },
+            {
+                "command": "extension.refreshPage",
+                "title": "Pinegrow: Refresh page"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.selectInPG",
+                "key": "ctrl+alt+p",
+                "mac": "cmd+alt+p",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "extension.openInPG",
+                "key": "ctrl+alt+o",
+                "mac": "cmd+alt+o",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "extension.refreshPage",
+                "key": "ctrl+alt+r",
+                "mac": "cmd+alt+r",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {
+        "socket.io-client": "1.4.x"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
