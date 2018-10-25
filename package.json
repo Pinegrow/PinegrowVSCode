@@ -30,6 +30,25 @@
                 }
             }
         },
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "resourceLangId == html",
+                    "command": "extension.selectInPG",
+                    "group": "pinegrow"
+                },
+                {
+                    "when": "resourceLangId == html",
+                    "command": "extension.openInPG",
+                    "group": "pinegrow"
+                },
+                {
+                    "when": "resourceLangId == html",
+                    "command": "extension.refreshPage",
+                    "group": "pinegrow"
+                }
+            ]
+        },
         "commands": [
             {
                 "command": "extension.selectInPG",
