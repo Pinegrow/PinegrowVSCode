@@ -101,7 +101,7 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "dependencies": {
-        "socket.io-client": "1.4.x"
+        "socket.io-client": "2.1.1"
     },
     "devDependencies": {
         "typescript": "^2.6.1",
