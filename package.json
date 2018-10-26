@@ -52,7 +52,7 @@
         "commands": [
             {
                 "command": "extension.selectInPG",
-                "title": "Pinegrow: Show element"
+                "title": "Pinegrow: Select element"
             },
             {
                 "command": "extension.openInPG",
@@ -61,10 +61,6 @@
             {
                 "command": "extension.reconnect",
                 "title": "Pinegrow: Reconnect"
-            },
-            {
-                "command": "extension.detectMapping",
-                "title": "Pinegrow: Detect PG <-> VS Code file path mapping"
             },
             {
                 "command": "extension.downloadPinegrow",
