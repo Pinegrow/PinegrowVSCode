@@ -1,9 +1,10 @@
 {
     "name": "pinegrow-vscode",
-    "displayName": "Pinegrow Visual studio code",
-    "description": "Visual studio code plugin for Pinegrow integration https://pinegrow.com",
-    "version": "0.0.1",
+    "displayName": "Pinegrow Live Sync",
+    "description": "Visual studio code plugin for live syncing with Pinegrow Web Editor (https://pinegrow.com). Requires Pinegrow Web Editor 2.9+.",
+    "version": "0.0.2",
     "publisher": "Pinegrow",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.28.0"
     },
