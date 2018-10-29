@@ -2,12 +2,15 @@ const vscode = require('vscode');
 const PinegrowVS = require('./lib/pinegrow-vs');
 
 var pgvs = new PinegrowVS();
+var activeEditor = null;
 
 function activate(context) {
     pgvs.init();
 
     vscode.window.onDidChangeActiveTextEditor(function (editor) {
+        pgvs.activeEditorChanged(editor, activeEditor);
         pgvs.visibleEditorChanged(editor);
+        activeEditor = editor;
     })
 
     vscode.workspace.onDidChangeTextDocument(function (editor) {
