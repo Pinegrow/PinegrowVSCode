@@ -15,7 +15,13 @@
         "*"
     ],
     "icon": "icon.png",
-    "keywords": ["html","css","WordPress","CSS grid","sass"],
+    "keywords": [
+        "html",
+        "css",
+        "WordPress",
+        "CSS grid",
+        "sass"
+    ],
     "main": "./extension",
     "repository": {
         "type": "git",
