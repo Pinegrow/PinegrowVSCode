@@ -2,7 +2,7 @@
     "name": "pinegrow-vscode",
     "displayName": "Pinegrow Live Sync",
     "description": "Visual studio code plugin for live syncing with Pinegrow Web Editor, that lets you build responsive websites faster with live multi-page editing, CSS & SASS styling, CSS Grid editor and smart components for Bootstrap, Foundation and WordPress.",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "Pinegrow",
     "license": "MIT",
     "engines": {
@@ -110,10 +110,10 @@
         "socket.io-client": "2.1.1"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^8.10.62",
         "eslint": "^4.11.0",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.37"
     }
 }
