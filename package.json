@@ -2,7 +2,7 @@
     "name": "pinegrow-vscode",
     "displayName": "Pinegrow Live Sync",
     "description": "Visual studio code plugin for live syncing with Pinegrow Web Editor, that lets you build responsive websites faster with live multi-page editing, CSS & SASS styling, CSS Grid editor and smart components for Bootstrap, Foundation and WordPress.",
-    "version": "0.0.8",
+    "version": "0.0.12",
     "publisher": "Pinegrow",
     "license": "MIT",
     "engines": {
@@ -37,6 +37,11 @@
                     "type": "string",
                     "default": "http://localhost:40000",
                     "description": "Url with hostname and port of Pinegrow's internal webserver. Note that port + 1 will be used for code editor communication. Default value is http://localhost:40000. In Pinegrow, use `Support -> Show API url` to display the url."
+                },
+                "pinegrow.debug": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Output debug information to the console to help troubleshoot issues with the Visual Studio Code - Pinegrow communication. Restart VS Code after changing the setting."
                 }
             }
         },

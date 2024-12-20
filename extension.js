@@ -9,7 +9,9 @@ function activate(context) {
 
     vscode.window.onDidChangeActiveTextEditor(function (editor) {
         pgvs.activeEditorChanged(editor, activeEditor);
-        pgvs.visibleEditorChanged(editor);
+        if(editor) {
+            pgvs.visibleEditorChanged(editor);
+        }
         activeEditor = editor;
     })
 
